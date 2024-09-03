@@ -44,7 +44,7 @@ window.addEventListener('load', function(){
                     </div>
                     <div class="ib1">
                         <i class="fa fa-user-circle-o"></i>
-                        <p>Cái gì?</p>
+                        <p>Xin chào</p>
                     </div>
                 </div>  
         `
@@ -65,7 +65,7 @@ window.addEventListener('load', function(){
                     </div>
                     <div class="ib1">
                         <i class="fa fa-user-circle-o"></i>
-                        <p>Cái gì?</p>
+                        <p>Cảm ơn</p>
                     </div>
                 </div>  
         `

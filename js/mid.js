@@ -12,6 +12,18 @@ window.addEventListener('load', function(){
     $(".mid-articles").on("click",".delete",function(){
         deleteProduct(this.parentElement.parentElement.parentElement.parentElement)
     })
+    $(".mid").on("click","#imagee",function(){  
+        $(".zoompic img").attr("src",$(this).attr("src"))
+        if ($(".zoompics").hasClass('show')) {
+            $(".zoompics").removeClass('show');
+            document.body.style.overflow = 'auto';
+        }
+        else {
+            $(".zoompics").addClass('show');
+            document.body.style.overflow = 'hidden';
+        }
+    })  
+        
 //Lấy nút click
         let insert=this.document.querySelector("div.insert i");
         let insert1=this.document.querySelector("input.insert-1")
@@ -46,7 +58,7 @@ window.addEventListener('load', function(){
                     <div class="icon-user">
                         <i class="fa fa-user-circle-o"></i>
                     </div>
-                    <div class="new-img"><img src="${image}" alt="user"/></div>
+                    <div class="new-img"><img id="imagee" src="${image}" alt="user"/></div>
                     <div class="name-user">${name}</div>
                 </ul>
             `;
@@ -57,6 +69,7 @@ window.addEventListener('load', function(){
         //    neww.insertAdjacentHTML(p,h);
         })
 //Thêm bài viết khi ấn nút đăng
+        
         let btn1=this.document.getElementById("btnAdd1");
         let mid_articles=this.document.querySelector(".mid-articles");
         btn1.addEventListener("click",function(){
@@ -79,7 +92,7 @@ window.addEventListener('load', function(){
                                 <li class="scroll-next"><i class='fas fa-angle-double-right'></i></li>
                             </div>
                             <div class="list-picture"> 
-                                <img src="${image_article}" alt="webdesign"/>
+                                <img id="imagee" src="${image_article}" alt="webdesign"/>
                                 <a href="#" class="delete">&times;</a>
                             </div>
                         </div>
@@ -143,17 +156,4 @@ window.addEventListener('load', function(){
             }
         })
         
-        let imagee =document.querySelectorAll("#imagee");   
-        for(let img_zoom of imagee){
-            img_zoom.addEventListener("click", function() {
-                if (img_zoom.classList.contains('fullscreen')) {
-                    img_zoom.classList.remove('fullscreen');
-                    document.body.style.overflow = 'auto';
-                }
-                else {
-                    img_zoom.classList.add('fullscreen');
-                    document.body.style.overflow = 'hidden';
-            }
-        });
-        }
 });

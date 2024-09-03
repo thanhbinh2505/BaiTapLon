@@ -1,0 +1,197 @@
+.flex{
+    display: flex;
+}
+body{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+div.background{
+    position: fixed;
+    background-image: url(../images/BACKGROUND.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+    z-index: -1;
+}
+.form-logins{
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+.form-login{
+    
+    width: 400px;
+    height: 700px;
+    background-color: rgb(71, 200, 200, 0);
+    margin: auto;
+}
+.form-login>h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 3.5vw;
+}
+.user{
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+}
+.user input{
+    width: 350px;
+    padding: 10px;
+    border: none;
+    color: aliceblue;
+    font-size: 1.3vw;
+    background-color: rgb(255, 255, 255, 0);
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+input::placeholder{
+    opacity: 0.7;
+    color: aliceblue;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+input:focus{
+    outline: none;
+}
+.checkbox>input{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 15px;
+    
+}
+.checkbox>p{
+    font-size: 1.2vw;
+    color: aliceblue;
+}
+.user>a>button{
+    width: 370px;
+    padding: 10px;
+    background-color: #2766C2;
+    color: aliceblue;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+.create{
+    text-align: center;
+}
+.create>button{
+    width: 200px;
+    padding: 10px;
+    background-color: #29b52e;
+    color: aliceblue;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+.form-creates{
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+.form-create{
+    display: none;
+    width: 400px;
+    height: 700px;
+    background-color: rgb(71, 200, 200, 0);
+    margin: auto;
+}
+button:hover{
+    cursor: pointer;
+}
+.form-create>h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 3.5vw;
+}
+.user-cr{
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+}
+.user-cr input{
+    width: 350px;
+    padding: 10px;
+    border: none;
+    color: aliceblue;
+    font-size: 1.3vw;
+    background-color: rgb(255, 255, 255, 0);
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+.user-cr>button{
+    margin-top: 20px;
+    width: 370px;
+    padding: 10px;
+    background-color: #50c227;
+    color: aliceblue;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+.radio-gen input{
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+}
+.radio-gen p{
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: aliceblue;
+    font-size: 1.3vw;
+}
+.dates input{
+    width: 160px;
+    font-size: 1.5vw;
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.dates h4{
+    margin: 0;
+    margin-top: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: aliceblue;
+    font-size: 1.5vw;
+}
+
+.done-cr{
+    z-index: -2;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+.done-cr>div.done-crs{
+    display: none;
+    margin: auto;
+    width: auto;
+    height: 50px;
+    border: 1px solid rgb(93, 93, 93);
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: rgb(116, 115, 115);
+}
+.done-cr>div>h3{
+    
+    margin: auto;
+    padding: 12px;
+}

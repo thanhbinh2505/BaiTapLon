@@ -8,10 +8,6 @@
  .mid>div{
     width: 100%;
 }
-.show{
-    display: block !important;
-    
-}
 div.news{
     position: relative;
     padding-top: 10px;

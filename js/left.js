@@ -10,19 +10,18 @@ $(document).ready(function(){
             $(`.left-img img:nth-child(${x})`).fadeIn(2000);
         });
     }, 5000);
-
-    var xx=0;
-    const right_img=document.querySelectorAll('.right-top-imgs')
+//ĐỔi hình quảng cáo
+    var xyz=1;
+    let width=$(".right-top-img img").width()
     setInterval(function() {
-            $(".right-top-img img").fadeOut(2000,function(){
-                $(".right-top-img img").eq(xx).fadeIn(2000)
-            }) 
-            xx++;
-            if(xx>2){
-                xx=0;
-            }
-            
-    }, 10000);
+        xyz++
+        $(".right-top-img").animate({scrollLeft: `+=${width}`},2000);
+        if(xyz==$(".right-top-img img").length){
+            width=width*-1
+            xyz=1
+         }  
+    }, 5000);
+//nháy màu chữ
     let colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#FF33A1'];
     setInterval(function(){
         let randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -68,16 +67,13 @@ $(document).ready(function(){
     $(".scroll-left").click(function(){
         $(".news").animate({scrollLeft: "-=300"},1000);
     })
-    
 //Nút cuộn bài viết
-
-    $(".scroll-next").click(function(){
-        $(".picture").animate({scrollLeft: "+=585px"},1000);
+    $(".mid-articles").on("click",".scroll-next",function(){
+        $(this).closest(".picture").animate({scrollLeft: "+=585px"},1000);
     })
-    $(".scroll-prev").click(function(){
-        $(".picture").animate({scrollLeft: "-=585dpx"},1000);
+    $(".mid-articles").on("click",".scroll-prev",function(){
+        $(this).closest(".picture").animate({scrollLeft: "-=585px"},1000);
     })
-
 //Ẩn hiện nút scroll
     $(".mid_intension").on("click",".btn", function(){
         let counts = $(".mid-article")
