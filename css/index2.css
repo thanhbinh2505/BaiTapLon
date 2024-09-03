@@ -1,0 +1,35 @@
+.left>ul.homele{
+    height: 80%;
+}
+.left{
+    top: 10%;
+}
+.video{
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.5vw;
+    list-style-type: none;
+}
+.setting i:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.container{
+    padding: 15px;
+}
+.mid{
+    left: 30%;
+    width: 60%;
+}
+.mid-article-mid>div.picture {
+    width: auto;
+    margin: auto;
+    overflow: hidden;
+}
+div.mid-articles{
+    width: 100%;
+}
+iframe{
+    width: 1200px;
+    height: 700px;
+}
