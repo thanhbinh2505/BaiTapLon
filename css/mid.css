@@ -185,6 +185,11 @@ ul.mid_1{
     border-radius: 15px;  
     transition: transform 1s;   
 }
+.new-img video{
+    width: 100%;
+    border-radius: 15px;  
+    transition: transform 1s;   
+}
 ul.new-1>li>div>i{
     padding: 5px;
     color: #2766C2;
@@ -280,6 +285,11 @@ div.mid-article-top{
     object-fit: contain;
     transition: all .5s ease;
 }
+.list-picture video{
+    width:100%;
+    object-fit: contain;
+    transition: all .5s ease;
+}
 .mid-article-mid img:hover{
     transform: scale(1.03);
 }
@@ -336,7 +346,7 @@ a.delete{
 .commented p{
     border: 2px solid rgb(226, 224, 224);
     font-size: 1.2vw;
-    background-color: #e7e7e7;
+    background-color: #ededed;
     padding: 10px;
     border-radius: 15px;
 }

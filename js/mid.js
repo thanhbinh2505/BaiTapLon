@@ -12,6 +12,7 @@ window.addEventListener('load', function(){
     $(".mid-articles").on("click",".delete",function(){
         deleteProduct(this.parentElement.parentElement.parentElement.parentElement)
     })
+   //zoom hình ảnh 
     $(".mid").on("click","#imagee",function(){  
         $(".zoompic img").attr("src",$(this).attr("src"))
         if ($(".zoompics").hasClass('show')) {
